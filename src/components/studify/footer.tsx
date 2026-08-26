@@ -86,7 +86,7 @@ export function Footer() {
           aria-hidden
           className="mt-8 select-none text-center text-[22vw] font-extrabold leading-none tracking-tight text-navy-card md:text-[14rem]"
         >
-          Studify
+          CogNova
         </p>
 
         <div className="flex flex-col items-center justify-between gap-3 border-t border-navy-card py-6 text-xs font-semibold text-primary-foreground/50 sm:flex-row">

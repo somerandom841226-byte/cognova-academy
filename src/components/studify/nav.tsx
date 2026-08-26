@@ -11,7 +11,7 @@ export function Nav() {
             <GraduationCap className="size-5" />
           </span>
           <span className="text-xl font-extrabold tracking-tight text-foreground">
-            Studify
+            CogNova
           </span>
         </a>
 
