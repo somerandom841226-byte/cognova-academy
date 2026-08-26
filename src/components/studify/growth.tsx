@@ -82,7 +82,7 @@ export function Growth() {
             href="#pricing"
             className="group mt-9 inline-flex items-center gap-2 rounded-full bg-primary py-3 pl-7 pr-2 text-sm font-bold text-primary-foreground shadow-xl shadow-navy/20 transition-transform hover:scale-[1.03]"
           >
-            Join Studify Today
+            Join CogNova Today
             <span className="grid size-9 place-items-center rounded-full bg-sun text-primary transition-transform group-hover:rotate-45">
               <ArrowUpRight className="size-4" />
             </span>
