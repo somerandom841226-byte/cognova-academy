@@ -44,7 +44,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl px-6 text-center">
         <p className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full bg-background px-4 py-2 text-xs font-bold uppercase tracking-widest text-foreground shadow-sm">
           <span className="size-2 rounded-full bg-coral" />
-          Welcome to Studify
+          WELCOME TO COGNOVA
         </p>
 
         <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight text-navy-deep md:text-7xl">
