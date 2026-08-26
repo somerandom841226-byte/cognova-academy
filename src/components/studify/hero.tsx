@@ -50,7 +50,7 @@ export function Hero() {
         <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight text-navy-deep md:text-7xl">
           Learn <span className="hl-blue hl-blue-foreground">Smarter</span>.
           <br />
-          Grow Faster with Studify.
+          Grow Faster with CogNova Academy.
         </h1>
 
         <p className="mx-auto mt-6 max-w-xl text-base font-medium leading-relaxed text-navy-deep/70 md:text-lg">
