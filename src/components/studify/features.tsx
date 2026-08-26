@@ -37,7 +37,7 @@ export function Features() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-sun">
-            Why Studify
+            WHY COGNOVA ACADEMY
           </p>
           <h2 className="mt-4 text-4xl font-extrabold tracking-tight text-primary-foreground md:text-5xl">
             Everything You Need to{" "}

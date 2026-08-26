@@ -29,7 +29,7 @@ export function Footer() {
                 <GraduationCap className="size-5" />
               </span>
               <span className="text-xl font-extrabold tracking-tight">
-                Studify
+                CogNova Academy
               </span>
             </a>
             <p className="mt-4 text-sm font-medium leading-relaxed text-primary-foreground/60">
