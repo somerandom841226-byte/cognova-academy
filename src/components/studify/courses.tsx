@@ -12,7 +12,7 @@ const courses = [
     bg: "bg-blush",
     tag: "Marketing",
     tagBg: "bg-coral/15 text-coral",
-    title: "Digital Marketing Mastery",
+    title: "AI Smart Kids",
     lessons: 42,
     hours: 12,
     rating: "4.9",
