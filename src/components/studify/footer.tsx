@@ -20,8 +20,8 @@ const socials = [Twitter, Instagram, Youtube, Linkedin];
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-navy-deep pt-20 text-primary-foreground">
-      <div className="mx-auto max-w-6xl px-6">
+    <footer id="contact" className="overflow-hidden bg-navy-deep pt-16 text-primary-foreground sm:pt-20">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="flex flex-col items-start justify-between gap-12 md:flex-row">
           <div className="max-w-sm">
             <a href="#top" className="flex items-center gap-2">
@@ -41,7 +41,7 @@ export function Footer() {
                 <a
                   key={i}
                   href="#contact"
-                  aria-label="Studify on social media"
+                  aria-label="CogNova on social media"
                   className="grid size-10 place-items-center rounded-full bg-navy-card text-primary-foreground/80 transition-colors hover:bg-sun hover:text-navy-deep"
                 >
                   <Icon className="size-4" />
@@ -50,7 +50,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 sm:gap-16">
+          <div className="grid w-full grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-12">
             {columns.map((col) => (
               <div key={col.title}>
                 <h3 className="text-sm font-extrabold uppercase tracking-widest text-sun">
@@ -84,13 +84,13 @@ export function Footer() {
 
         <p
           aria-hidden
-          className="mt-8 select-none text-center text-[22vw] font-extrabold leading-none tracking-tight text-navy-card md:text-[14rem]"
+          className="mt-8 select-none text-center text-[15vw] font-extrabold leading-none tracking-tight text-navy-card md:text-[12rem]"
         >
           CogNova
         </p>
 
         <div className="flex flex-col items-center justify-between gap-3 border-t border-navy-card py-6 text-xs font-semibold text-primary-foreground/50 sm:flex-row">
-          <p>© 2026 Studify. All rights reserved.</p>
+          <p>© 2026 CogNova Academy. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#contact" className="hover:text-primary-foreground">
               Privacy Policy

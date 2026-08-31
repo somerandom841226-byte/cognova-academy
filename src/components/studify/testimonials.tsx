@@ -9,7 +9,7 @@ const testimonials = [
     name: "Maya Thompson",
     role: "Junior UX Designer",
     quote:
-      "Studify made learning feel like a game I actually wanted to play. Three months in, I landed my first design job — the projects in my portfolio did the talking.",
+      "CogNova Academy made learning feel like a game I actually wanted to play. Three months in, I landed my first design job — the projects in my portfolio did the talking.",
   },
   {
     avatar: avatar2,
@@ -23,14 +23,14 @@ const testimonials = [
     name: "Lena Fischer",
     role: "Frontend Developer",
     quote:
-      "I tried five platforms before Studify. This is the first one I actually finished. The mentors' feedback on my projects made all the difference.",
+      "I tried five platforms before CogNova. This is the first one I actually finished. The mentors' feedback on my projects made all the difference.",
   },
 ];
 
 export function Testimonials() {
   return (
-    <section className="bg-navy py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-navy py-16 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-sun">
             Testimonials
@@ -42,7 +42,7 @@ export function Testimonials() {
           </h2>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:mt-14 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t) => (
             <figure
               key={t.name}

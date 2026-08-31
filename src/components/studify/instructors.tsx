@@ -17,8 +17,8 @@ const instructors = [
 
 export function Instructors() {
   return (
-    <section className="bg-background py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-background py-16 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-coral">
             Our Mentors
@@ -33,7 +33,7 @@ export function Instructors() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid sm:mt-14 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {instructors.map((t) => (
             <article
               key={t.name}

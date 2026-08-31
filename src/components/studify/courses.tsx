@@ -77,8 +77,8 @@ const courses = [
 
 export function Courses() {
   return (
-    <section id="courses" className="bg-background py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="courses" className="bg-background py-16 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-xl">
             <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-coral">
@@ -100,7 +100,7 @@ export function Courses() {
           </a>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid sm:mt-14 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {courses.map((c) => (
             <article
               key={c.title}

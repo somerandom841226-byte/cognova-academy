@@ -19,8 +19,8 @@ const points = [
 
 export function Growth() {
   return (
-    <section className="overflow-hidden bg-sky-soft py-24 md:py-32">
-      <div className="mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-2">
+    <section className="overflow-hidden bg-sky-soft py-16 sm:py-24 md:py-32">
+      <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 sm:px-6 lg:gap-14 lg:grid-cols-2">
         {/* Illustration side */}
         <div className="relative mx-auto w-full max-w-md">
           <div className="absolute inset-x-6 bottom-0 top-16 rounded-[2.5rem] bg-sun" />
@@ -62,7 +62,7 @@ export function Growth() {
             <span className="hl-blue hl-blue-foreground">Learn</span> &amp; Grow
           </h2>
           <p className="mt-5 max-w-lg text-base font-medium leading-relaxed text-navy-deep/70">
-            Studify turns big goals into small, joyful steps. Follow a clear
+            CogNova Academy turns big goals into small, joyful steps. Follow a clear
             path, practice with real projects, and watch your skills compound
             week after week.
           </p>
@@ -91,7 +91,7 @@ export function Growth() {
       </div>
 
       {/* Stats strip */}
-      <div className="mx-auto mt-20 max-w-6xl px-6">
+      <div className="mx-auto mt-14 max-w-6xl sm:mt-20 px-5 sm:px-6">
         <div className="grid grid-cols-2 gap-4 rounded-[2rem] bg-navy p-8 md:grid-cols-4 md:p-10">
           {stats.map((s) => (
             <div key={s.label} className="text-center">

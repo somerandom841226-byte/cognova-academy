@@ -28,7 +28,7 @@ export function Faq() {
   const [open, setOpen] = useState<number>(0);
 
   return (
-    <section className="bg-background py-24 md:py-32">
+    <section className="bg-background py-16 sm:py-24 md:py-32">
       <div className="mx-auto max-w-3xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-coral">
