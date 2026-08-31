@@ -20,7 +20,7 @@ const socials = [Twitter, Instagram, Youtube, Linkedin];
 
 export function Footer() {
   return (
-    <footer id="contact" className="bg-navy-deep pt-20 text-primary-foreground">
+    <footer id="contact" className="overflow-hidden bg-navy-deep pt-16 text-primary-foreground sm:pt-20">
       <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="flex flex-col items-start justify-between gap-12 md:flex-row">
           <div className="max-w-sm">
@@ -50,7 +50,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 sm:gap-16">
+          <div className="grid w-full grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-12">
             {columns.map((col) => (
               <div key={col.title}>
                 <h3 className="text-sm font-extrabold uppercase tracking-widest text-sun">
@@ -84,7 +84,7 @@ export function Footer() {
 
         <p
           aria-hidden
-          className="mt-8 select-none text-center text-[18vw] font-extrabold leading-none tracking-tight text-navy-card md:text-[14rem]"
+          className="mt-8 select-none text-center text-[15vw] font-extrabold leading-none tracking-tight text-navy-card md:text-[12rem]"
         >
           CogNova
         </p>
