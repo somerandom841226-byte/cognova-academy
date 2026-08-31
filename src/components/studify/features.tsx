@@ -33,8 +33,8 @@ const features = [
 
 export function Features() {
   return (
-    <section id="about-us" className="bg-navy py-24 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
+    <section id="about-us" className="bg-navy py-16 sm:py-24 md:py-32">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-xs font-extrabold uppercase tracking-[0.25em] text-sun">
             WHY COGNOVA ACADEMY
@@ -49,7 +49,7 @@ export function Features() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid sm:mt-14 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f) => (
             <article
               key={f.title}

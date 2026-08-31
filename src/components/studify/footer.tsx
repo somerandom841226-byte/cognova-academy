@@ -21,7 +21,7 @@ const socials = [Twitter, Instagram, Youtube, Linkedin];
 export function Footer() {
   return (
     <footer id="contact" className="bg-navy-deep pt-20 text-primary-foreground">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="flex flex-col items-start justify-between gap-12 md:flex-row">
           <div className="max-w-sm">
             <a href="#top" className="flex items-center gap-2">
@@ -84,7 +84,7 @@ export function Footer() {
 
         <p
           aria-hidden
-          className="mt-8 select-none text-center text-[22vw] font-extrabold leading-none tracking-tight text-navy-card md:text-[14rem]"
+          className="mt-8 select-none text-center text-[18vw] font-extrabold leading-none tracking-tight text-navy-card md:text-[14rem]"
         >
           CogNova
         </p>

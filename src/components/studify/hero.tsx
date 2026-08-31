@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-gradient-to-b from-sky-soft via-sky to-sky-soft pb-0 pt-36 md:pt-44"
+      className="relative overflow-hidden bg-gradient-to-b from-sky-soft via-sky to-sky-soft pb-0 pt-28 sm:pt-36 md:pt-44"
     >
       {/* floating decorations */}
       <img
@@ -47,7 +47,7 @@ export function Hero() {
           WELCOME TO COGNOVA
         </p>
 
-        <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight text-navy-deep md:text-7xl">
+        <h1 className="text-4xl font-extrabold leading-[1.08] tracking-tight text-navy-deep sm:text-5xl sm:leading-[1.05] md:text-7xl">
           Think&nbsp;<span className="hl-blue hl-blue-foreground">Beyond</span>,
           <br />
           Learn Beyond with CogNova Academy.
