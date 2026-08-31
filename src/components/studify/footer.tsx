@@ -41,7 +41,7 @@ export function Footer() {
                 <a
                   key={i}
                   href="#contact"
-                  aria-label="Studify on social media"
+                  aria-label="CogNova on social media"
                   className="grid size-10 place-items-center rounded-full bg-navy-card text-primary-foreground/80 transition-colors hover:bg-sun hover:text-navy-deep"
                 >
                   <Icon className="size-4" />
@@ -90,7 +90,7 @@ export function Footer() {
         </p>
 
         <div className="flex flex-col items-center justify-between gap-3 border-t border-navy-card py-6 text-xs font-semibold text-primary-foreground/50 sm:flex-row">
-          <p>© 2026 Studify. All rights reserved.</p>
+          <p>© 2026 CogNova Academy. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#contact" className="hover:text-primary-foreground">
               Privacy Policy

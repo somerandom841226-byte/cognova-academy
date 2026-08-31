@@ -62,7 +62,7 @@ export function Growth() {
             <span className="hl-blue hl-blue-foreground">Learn</span> &amp; Grow
           </h2>
           <p className="mt-5 max-w-lg text-base font-medium leading-relaxed text-navy-deep/70">
-            Studify turns big goals into small, joyful steps. Follow a clear
+            CogNova Academy turns big goals into small, joyful steps. Follow a clear
             path, practice with real projects, and watch your skills compound
             week after week.
           </p>

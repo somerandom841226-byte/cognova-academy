@@ -86,7 +86,7 @@ export function Hero() {
               <img
                 key={i}
                 src={src}
-                alt="Happy Studify learner"
+                alt="Happy CogNova learner"
                 width={96}
                 height={96}
                 className="size-11 rounded-full border-[3px] border-sun object-cover shadow-md"

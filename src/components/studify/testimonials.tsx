@@ -9,7 +9,7 @@ const testimonials = [
     name: "Maya Thompson",
     role: "Junior UX Designer",
     quote:
-      "Studify made learning feel like a game I actually wanted to play. Three months in, I landed my first design job — the projects in my portfolio did the talking.",
+      "CogNova Academy made learning feel like a game I actually wanted to play. Three months in, I landed my first design job — the projects in my portfolio did the talking.",
   },
   {
     avatar: avatar2,
@@ -23,7 +23,7 @@ const testimonials = [
     name: "Lena Fischer",
     role: "Frontend Developer",
     quote:
-      "I tried five platforms before Studify. This is the first one I actually finished. The mentors' feedback on my projects made all the difference.",
+      "I tried five platforms before CogNova. This is the first one I actually finished. The mentors' feedback on my projects made all the difference.",
   },
 ];
 
