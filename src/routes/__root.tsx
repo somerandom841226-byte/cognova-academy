@@ -77,18 +77,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Studify – Learn Smarter, Grow Faster" },
+      { title: "CogNova Academy – Think Beyond, Learn Beyond" },
       {
         name: "description",
         content:
-          "Studify is a playful learning platform with expert-led courses, real projects and a community that helps you grow your skills.",
+          "CogNova Academy is a playful learning platform with expert-led courses, real projects and a community that helps you grow your skills.",
       },
-      { name: "author", content: "Studify" },
-      { property: "og:title", content: "Studify – Learn Smarter, Grow Faster" },
+      { name: "author", content: "CogNova Academy" },
+      { property: "og:site_name", content: "CogNova Academy" },
+      {
+        property: "og:title",
+        content: "CogNova Academy – Think Beyond, Learn Beyond",
+      },
       {
         property: "og:description",
         content:
-          "Expert-led courses, real projects and a supportive community. Learn smarter with Studify.",
+          "Expert-led courses, real projects and a supportive community. Think beyond with CogNova Academy.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

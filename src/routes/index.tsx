@@ -13,18 +13,24 @@ import { Footer } from "@/components/studify/footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Studify – Learn Smarter, Grow Faster" },
+      { title: "CogNova Academy – Think Beyond, Learn Beyond" },
       {
         name: "description",
         content:
-          "Studify is a playful learning platform with expert-led courses, real projects and a community that helps you grow your skills.",
+          "CogNova Academy offers expert-led, project-based courses in AI, design, web development and marketing. Think beyond, learn beyond.",
       },
-      { property: "og:title", content: "Studify – Learn Smarter, Grow Faster" },
+      {
+        property: "og:title",
+        content: "CogNova Academy – Think Beyond, Learn Beyond",
+      },
       {
         property: "og:description",
         content:
-          "Expert-led courses, real projects and a supportive community. Learn smarter with Studify.",
+          "Project-based courses taught by real-world experts, plus a community that keeps you growing.",
       },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
