@@ -2,9 +2,6 @@ import { ArrowUpRight, Clock3, PlaySquare, Star } from "lucide-react";
 import courseMarketing from "@/assets/course-marketing.jpg";
 import courseDesign from "@/assets/course-design.jpg";
 import courseWebdev from "@/assets/course-webdev.jpg";
-import courseData from "@/assets/course-data.jpg";
-import courseAi from "@/assets/course-ai.jpg";
-import courseUiux from "@/assets/course-uiux.jpg";
 
 const courses = [
   {
@@ -39,39 +36,6 @@ const courses = [
     hours: 18,
     rating: "5.0",
     price: "$59",
-  },
-  {
-    image: courseData,
-    bg: "bg-sun-soft",
-    tag: "Data",
-    tagBg: "bg-sun text-navy-deep",
-    title: "Data Science Bootcamp",
-    lessons: 47,
-    hours: 15,
-    rating: "4.9",
-    price: "$69",
-  },
-  {
-    image: courseAi,
-    bg: "bg-sky-soft",
-    tag: "AI",
-    tagBg: "bg-navy text-primary-foreground",
-    title: "AI & Machine Learning Basics",
-    lessons: 31,
-    hours: 11,
-    rating: "4.8",
-    price: "$59",
-  },
-  {
-    image: courseUiux,
-    bg: "bg-blush",
-    tag: "UI/UX",
-    tagBg: "bg-coral/15 text-coral",
-    title: "UI/UX Design Essentials",
-    lessons: 39,
-    hours: 10,
-    rating: "4.9",
-    price: "$45",
   },
 ];
 
@@ -159,6 +123,25 @@ export function Courses() {
               </div>
             </article>
           ))}
+
+          <article className="flex flex-col items-center justify-center rounded-3xl bg-card p-6 text-center shadow-sm ring-1 ring-border transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-navy/10 sm:max-w-none">
+            <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
+              More coming soon
+            </p>
+            <h3 className="mt-3 text-2xl font-extrabold text-navy-deep">
+              View more
+            </h3>
+            <p className="mt-2 max-w-[16rem] text-sm font-medium text-muted-foreground">
+              We just launched CogNova Academy and are busy adding new courses.
+            </p>
+            <a
+              href="#pricing"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-secondary px-6 py-3 text-sm font-bold text-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              Get notified
+              <ArrowUpRight className="size-4" />
+            </a>
+          </article>
         </div>
       </div>
     </section>
