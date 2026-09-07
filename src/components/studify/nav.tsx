@@ -36,11 +36,11 @@ export function Nav() {
           </ul>
 
           <div className="flex items-center gap-2">
-            <a
-              href="#pricing"
+            <Link
+              to="/login"
               className="group hidden items-center gap-2 rounded-full bg-primary py-2.5 pl-5 pr-1.5 text-sm font-bold text-primary-foreground transition-transform hover:scale-[1.03] sm:inline-flex"
             >
-              Get Started
+              Sign In
               <span className="grid size-8 place-items-center rounded-full bg-sun text-primary transition-transform group-hover:rotate-45">
                 <ArrowUpRight className="size-4" />
               </span>
