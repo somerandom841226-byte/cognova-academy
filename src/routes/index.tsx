@@ -4,7 +4,6 @@ import { Hero } from "@/components/studify/hero";
 import { Features } from "@/components/studify/features";
 import { Courses } from "@/components/studify/courses";
 import { Growth } from "@/components/studify/growth";
-import { Instructors } from "@/components/studify/instructors";
 import { Testimonials } from "@/components/studify/testimonials";
 import { Pricing } from "@/components/studify/pricing";
 import { Faq } from "@/components/studify/faq";
@@ -46,7 +45,6 @@ function Index() {
         <Features />
         <Courses />
         <Growth />
-        <Instructors />
         <Testimonials />
         <Pricing />
         <Faq />

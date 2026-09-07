@@ -3,13 +3,6 @@ import characterCool from "@/assets/character-cool.png";
 import boyPointing from "@/assets/boy-pointing.png";
 import stairsFlag from "@/assets/stairs-flag.png";
 
-const stats = [
-  { value: "12k+", label: "Active Learners" },
-  { value: "120+", label: "Expert Courses" },
-  { value: "95%", label: "Completion Rate" },
-  { value: "4.9", label: "Average Rating" },
-];
-
 const points = [
   "Bite-sized lessons that fit your schedule",
   "Hands-on projects reviewed by mentors",
@@ -90,21 +83,6 @@ export function Growth() {
         </div>
       </div>
 
-      {/* Stats strip */}
-      <div className="mx-auto mt-14 max-w-6xl sm:mt-20 px-5 sm:px-6">
-        <div className="grid grid-cols-2 gap-4 rounded-[2rem] bg-navy p-8 md:grid-cols-4 md:p-10">
-          {stats.map((s) => (
-            <div key={s.label} className="text-center">
-              <p className="text-4xl font-extrabold text-sun md:text-5xl">
-                {s.value}
-              </p>
-              <p className="mt-2 text-xs font-bold uppercase tracking-widest text-primary-foreground/60">
-                {s.label}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }
