@@ -11,7 +11,7 @@ export function Nav() {
 
   return (
     <header className="fixed inset-x-0 top-3 z-50 px-3 sm:top-4 sm:px-4">
-      <nav className="mx-auto max-w-6xl rounded-3xl bg-background/90 shadow-lg shadow-navy/5 ring-1 ring-border backdrop-blur lg:rounded-full">
+      <nav className="mx-auto max-w-6xl rounded-3xl border border-white/40 bg-white/30 shadow-lg shadow-navy/10 backdrop-blur-xl lg:rounded-full">
         <div className="flex items-center justify-between py-2.5 pl-4 pr-2.5 sm:pl-5">
           <a href="#top" className="flex items-center gap-2">
             <span className="grid size-9 place-items-center rounded-full bg-primary text-primary-foreground">
@@ -59,7 +59,7 @@ export function Nav() {
         </div>
 
         {open && (
-          <div className="border-t border-border px-4 pb-4 pt-3 lg:hidden">
+          <div className="border-t border-white/30 bg-white/20 px-4 pb-4 pt-3 backdrop-blur-xl lg:hidden">
             <ul className="space-y-1">
               {links.map((label) => (
                 <li key={label}>
