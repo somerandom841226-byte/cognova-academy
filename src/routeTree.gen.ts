@@ -17,6 +17,7 @@ import { Route as StudentAssignmentsRouteImport } from './routes/student.assignm
 import { Route as StudentCertificatesRouteImport } from './routes/student.certificates'
 import { Route as StudentLeaderboardRouteImport } from './routes/student.leaderboard'
 import { Route as StudentLessonsRouteImport } from './routes/student.lessons'
+import { Route as StudentProfileRouteImport } from './routes/student.profile'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -58,6 +59,11 @@ const StudentLessonsRoute = StudentLessonsRouteImport.update({
   path: '/lessons',
   getParentRoute: () => StudentRoute,
 } as any)
+const StudentProfileRoute = StudentProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => StudentRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -67,6 +73,7 @@ export interface FileRoutesByFullPath {
   '/student/certificates': typeof StudentCertificatesRoute
   '/student/leaderboard': typeof StudentLeaderboardRoute
   '/student/lessons': typeof StudentLessonsRoute
+  '/student/profile': typeof StudentProfileRoute
   '/student/': typeof StudentIndexRoute
 }
 export interface FileRoutesByTo {
@@ -76,6 +83,7 @@ export interface FileRoutesByTo {
   '/student/certificates': typeof StudentCertificatesRoute
   '/student/leaderboard': typeof StudentLeaderboardRoute
   '/student/lessons': typeof StudentLessonsRoute
+  '/student/profile': typeof StudentProfileRoute
   '/student': typeof StudentIndexRoute
 }
 export interface FileRoutesById {
@@ -87,6 +95,7 @@ export interface FileRoutesById {
   '/student/certificates': typeof StudentCertificatesRoute
   '/student/leaderboard': typeof StudentLeaderboardRoute
   '/student/lessons': typeof StudentLessonsRoute
+  '/student/profile': typeof StudentProfileRoute
   '/student/': typeof StudentIndexRoute
 }
 export interface FileRouteTypes {
@@ -99,6 +108,7 @@ export interface FileRouteTypes {
     | '/student/certificates'
     | '/student/leaderboard'
     | '/student/lessons'
+    | '/student/profile'
     | '/student/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -108,6 +118,7 @@ export interface FileRouteTypes {
     | '/student/certificates'
     | '/student/leaderboard'
     | '/student/lessons'
+    | '/student/profile'
     | '/student'
   id:
     | '__root__'
@@ -118,6 +129,7 @@ export interface FileRouteTypes {
     | '/student/certificates'
     | '/student/leaderboard'
     | '/student/lessons'
+    | '/student/profile'
     | '/student/'
   fileRoutesById: FileRoutesById
 }
@@ -185,6 +197,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StudentLessonsRouteImport
       parentRoute: typeof StudentRoute
     }
+    '/student/profile': {
+      id: '/student/profile'
+      path: '/profile'
+      fullPath: '/student/profile'
+      preLoaderRoute: typeof StudentProfileRouteImport
+      parentRoute: typeof StudentRoute
+    }
   }
 }
 
@@ -193,6 +212,7 @@ interface StudentRouteChildren {
   StudentCertificatesRoute: typeof StudentCertificatesRoute
   StudentLeaderboardRoute: typeof StudentLeaderboardRoute
   StudentLessonsRoute: typeof StudentLessonsRoute
+  StudentProfileRoute: typeof StudentProfileRoute
   StudentIndexRoute: typeof StudentIndexRoute
 }
 
@@ -201,6 +221,7 @@ const StudentRouteChildren: StudentRouteChildren = {
   StudentCertificatesRoute: StudentCertificatesRoute,
   StudentLeaderboardRoute: StudentLeaderboardRoute,
   StudentLessonsRoute: StudentLessonsRoute,
+  StudentProfileRoute: StudentProfileRoute,
   StudentIndexRoute: StudentIndexRoute,
 }
 
