@@ -2,11 +2,11 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowUpRight,
   BookOpen,
+  ClipboardList,
   Clock,
   Flame,
   PlayCircle,
   Target,
-  Trophy,
 } from "lucide-react";
 
 export const Route = createFileRoute("/student/")({
@@ -34,7 +34,7 @@ const stats = [
   { label: "Lessons completed", value: "18 / 32", icon: BookOpen, tint: "bg-sky-soft" },
   { label: "Day streak", value: "7 days", icon: Flame, tint: "bg-sun-soft" },
   { label: "Hours learned", value: "24.5 h", icon: Clock, tint: "bg-mint" },
-  { label: "Leaderboard rank", value: "#4", icon: Trophy, tint: "bg-lavender" },
+  { label: "Assignments", value: "2 pending", icon: ClipboardList, tint: "bg-lavender" },
 ];
 
 const courses = [
