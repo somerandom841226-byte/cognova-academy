@@ -15,7 +15,6 @@ import { Route as StudentRouteImport } from './routes/student'
 import { Route as StudentIndexRouteImport } from './routes/student.index'
 import { Route as StudentAssignmentsRouteImport } from './routes/student.assignments'
 import { Route as StudentCertificatesRouteImport } from './routes/student.certificates'
-import { Route as StudentLeaderboardRouteImport } from './routes/student.leaderboard'
 import { Route as StudentLessonsRouteImport } from './routes/student.lessons'
 import { Route as StudentProfileRouteImport } from './routes/student.profile'
 
@@ -49,11 +48,6 @@ const StudentCertificatesRoute = StudentCertificatesRouteImport.update({
   path: '/certificates',
   getParentRoute: () => StudentRoute,
 } as any)
-const StudentLeaderboardRoute = StudentLeaderboardRouteImport.update({
-  id: '/leaderboard',
-  path: '/leaderboard',
-  getParentRoute: () => StudentRoute,
-} as any)
 const StudentLessonsRoute = StudentLessonsRouteImport.update({
   id: '/lessons',
   path: '/lessons',
@@ -71,7 +65,6 @@ export interface FileRoutesByFullPath {
   '/student': typeof StudentRouteWithChildren
   '/student/assignments': typeof StudentAssignmentsRoute
   '/student/certificates': typeof StudentCertificatesRoute
-  '/student/leaderboard': typeof StudentLeaderboardRoute
   '/student/lessons': typeof StudentLessonsRoute
   '/student/profile': typeof StudentProfileRoute
   '/student/': typeof StudentIndexRoute
@@ -81,7 +74,6 @@ export interface FileRoutesByTo {
   '/login': typeof LoginRoute
   '/student/assignments': typeof StudentAssignmentsRoute
   '/student/certificates': typeof StudentCertificatesRoute
-  '/student/leaderboard': typeof StudentLeaderboardRoute
   '/student/lessons': typeof StudentLessonsRoute
   '/student/profile': typeof StudentProfileRoute
   '/student': typeof StudentIndexRoute
@@ -93,7 +85,6 @@ export interface FileRoutesById {
   '/student': typeof StudentRouteWithChildren
   '/student/assignments': typeof StudentAssignmentsRoute
   '/student/certificates': typeof StudentCertificatesRoute
-  '/student/leaderboard': typeof StudentLeaderboardRoute
   '/student/lessons': typeof StudentLessonsRoute
   '/student/profile': typeof StudentProfileRoute
   '/student/': typeof StudentIndexRoute
@@ -106,7 +97,6 @@ export interface FileRouteTypes {
     | '/student'
     | '/student/assignments'
     | '/student/certificates'
-    | '/student/leaderboard'
     | '/student/lessons'
     | '/student/profile'
     | '/student/'
@@ -116,7 +106,6 @@ export interface FileRouteTypes {
     | '/login'
     | '/student/assignments'
     | '/student/certificates'
-    | '/student/leaderboard'
     | '/student/lessons'
     | '/student/profile'
     | '/student'
@@ -127,7 +116,6 @@ export interface FileRouteTypes {
     | '/student'
     | '/student/assignments'
     | '/student/certificates'
-    | '/student/leaderboard'
     | '/student/lessons'
     | '/student/profile'
     | '/student/'
@@ -183,13 +171,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StudentCertificatesRouteImport
       parentRoute: typeof StudentRoute
     }
-    '/student/leaderboard': {
-      id: '/student/leaderboard'
-      path: '/leaderboard'
-      fullPath: '/student/leaderboard'
-      preLoaderRoute: typeof StudentLeaderboardRouteImport
-      parentRoute: typeof StudentRoute
-    }
     '/student/lessons': {
       id: '/student/lessons'
       path: '/lessons'
@@ -210,7 +191,6 @@ declare module '@tanstack/react-router' {
 interface StudentRouteChildren {
   StudentAssignmentsRoute: typeof StudentAssignmentsRoute
   StudentCertificatesRoute: typeof StudentCertificatesRoute
-  StudentLeaderboardRoute: typeof StudentLeaderboardRoute
   StudentLessonsRoute: typeof StudentLessonsRoute
   StudentProfileRoute: typeof StudentProfileRoute
   StudentIndexRoute: typeof StudentIndexRoute
@@ -219,7 +199,6 @@ interface StudentRouteChildren {
 const StudentRouteChildren: StudentRouteChildren = {
   StudentAssignmentsRoute: StudentAssignmentsRoute,
   StudentCertificatesRoute: StudentCertificatesRoute,
-  StudentLeaderboardRoute: StudentLeaderboardRoute,
   StudentLessonsRoute: StudentLessonsRoute,
   StudentProfileRoute: StudentProfileRoute,
   StudentIndexRoute: StudentIndexRoute,
