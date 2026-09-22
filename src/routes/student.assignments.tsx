@@ -105,7 +105,7 @@ function Assignments() {
                   {a.status === "Pending" ? (
                     <CircleDashed className="size-5" />
                   ) : a.status === "Submitted" ? (
-                    <Upload className="size-5" />
+                    <Send className="size-5" />
                   ) : (
                     <CheckCircle2 className="size-5" />
                   )}
