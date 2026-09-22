@@ -4,7 +4,6 @@ import {
   BookOpen,
   Award,
   ClipboardList,
-  Trophy,
   GraduationCap,
   LogOut,
 } from "lucide-react";
@@ -28,7 +27,6 @@ const items = [
   { title: "Lessons", url: "/student/lessons", icon: BookOpen },
   { title: "Assignments", url: "/student/assignments", icon: ClipboardList },
   { title: "Certificates", url: "/student/certificates", icon: Award },
-  { title: "Leaderboard", url: "/student/leaderboard", icon: Trophy },
 ] as const;
 
 export function StudentSidebar() {

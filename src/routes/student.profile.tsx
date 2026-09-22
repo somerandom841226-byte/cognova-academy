@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
-import { BookOpen, Award, Flame, Mail, MapPin, Save, Trophy } from "lucide-react";
+import { BookOpen, Award, Flame, Mail, MapPin, Save } from "lucide-react";
 import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
@@ -33,7 +33,6 @@ const stats = [
   { label: "Courses enrolled", value: "3", icon: BookOpen },
   { label: "Certificates", value: "1", icon: Award },
   { label: "Day streak", value: "12", icon: Flame },
-  { label: "Leaderboard rank", value: "#4", icon: Trophy },
 ];
 
 function StudentProfile() {
