@@ -132,9 +132,10 @@ function Assignments() {
                   {a.status === "Pending" && (
                     <button
                       type="button"
-                      className="rounded-full bg-primary px-4 py-1.5 text-xs font-bold text-primary-foreground"
+                      className="flex items-center gap-1.5 rounded-full bg-primary px-4 py-1.5 text-xs font-bold text-primary-foreground"
                     >
-                      Upload
+                      Start
+                      <ArrowRight className="size-3.5" />
                     </button>
                   )}
                 </div>
