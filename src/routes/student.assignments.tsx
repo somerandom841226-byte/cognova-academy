@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { CalendarDays, CheckCircle2, CircleDashed, Upload } from "lucide-react";
+import { ArrowRight, CalendarDays, CheckCircle2, CircleDashed, Send } from "lucide-react";
 
 export const Route = createFileRoute("/student/assignments")({
   head: () => ({
@@ -105,7 +105,7 @@ function Assignments() {
                   {a.status === "Pending" ? (
                     <CircleDashed className="size-5" />
                   ) : a.status === "Submitted" ? (
-                    <Upload className="size-5" />
+                    <Send className="size-5" />
                   ) : (
                     <CheckCircle2 className="size-5" />
                   )}
@@ -132,9 +132,10 @@ function Assignments() {
                   {a.status === "Pending" && (
                     <button
                       type="button"
-                      className="rounded-full bg-primary px-4 py-1.5 text-xs font-bold text-primary-foreground"
+                      className="flex items-center gap-1.5 rounded-full bg-primary px-4 py-1.5 text-xs font-bold text-primary-foreground"
                     >
-                      Upload
+                      Start
+                      <ArrowRight className="size-3.5" />
                     </button>
                   )}
                 </div>
