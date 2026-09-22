@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { CalendarDays, CheckCircle2, CircleDashed, Upload } from "lucide-react";
+import { ArrowRight, CalendarDays, CheckCircle2, CircleDashed, Send } from "lucide-react";
 
 export const Route = createFileRoute("/student/assignments")({
   head: () => ({
